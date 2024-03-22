@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="/dist/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="app.js" defer></script>
+ 
+   
+</head>
+<body class=" ">
+
+
+    <section class="convoy h-[110vh] bg-color-primary">
+        <div class="container">
+            <div class="flex justify-center"> 
+
+                <div class="card  mt-[20vh] w-[450px] h-[670px] rounded-2xl shadow-2xl shadow-color-shadow1">
+
+                    <div class="search flex justify-center mt-14 gap-6">
+                        <input type="text" placeholder="enter city name" spellcheck="false" class="py-4 w-[16rem] px-5 rounded-[50px] outline-none">
+                        <button class="h-[60px] w-[60px] bg-white rounded-[100%]">
+                            <i class="fa-solid fa-magnifying-glass text-2xl text-slate-400"></i>
+                        </button>
+                    </div>
+
+                    <div class="weather mt-4">
+                        <div class="weather-icon  flex justify-center">
+                            <img src="/dist/images/snow.png"  alt="">
+                        </div>
+                        
+                        <div class="text flex items-center flex-col gap-4">
+                            <h1 class="temp text-6xl font-bold text-white">33°C</h1>
+                            <h2 class="city text-4xl text-white">Tamluk</h2>
+                        </div>
+
+                        <div class="datials flex justify-center gap-6 mt-16">
+
+                                 <div class="humidity-b0x gap-5 flex items-center">
+                                    <div class="h-imag">
+                                        <img class="h-10" src="/dist/images/humidity.png" alt="">
+                                    </div>
+
+                                         <div class="h-box flex flex-col">
+                                         <p class="humidity text-white text-3xl ">50%</p>
+                                         <p class="humidity-box text-white">Humidity</p>
+                                     </div>
+                                 </div>
+                              
+                                
+                               <div class="wind-box gap-5 flex items-center">        
+                                    <img class="h-10" src="/dist/images/wind.png" alt="">
+
+                                    <div class="w-box flex flex-col">
+                                    <p class=" wind   text-white text-3xl">15 km/h</p>
+                                    <p class="wind-box text-white">Wind Speed</p>
+                                </div>
+                               </div>
+
+                        </div>
+                     
+                    </div>
+
+
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+
+    
+</body>
+</html>
